@@ -26,6 +26,10 @@ export class User {
     @ApiProperty()
     @Column()
     email: string;
+
+    @ApiProperty()
+    @Column()
+    photo: string;
 }
 
 export class UserLogin {

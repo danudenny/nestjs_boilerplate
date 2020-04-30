@@ -69,4 +69,8 @@ export class UserService {
     async deleteUser(id: number): Promise<DeleteResult> {
         return await this.userRepo.delete(id);
     }
+
+    async setPhoto(id: number, urlPath: string): Promise<any> {
+        return await this.userRepo.update(id, {photo: urlPath})
+    }
 }

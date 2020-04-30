@@ -12,7 +12,7 @@ import { ClientModule } from './modules/modules/clients/client.module';
     TypeOrmModule.forRoot(),
     UserModule,
     AuthModule,
-    ClientModule
+    ClientModule,
   ],
   controllers: [AppController],
   providers: [
