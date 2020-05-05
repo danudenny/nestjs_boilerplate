@@ -1,5 +1,6 @@
-import { PrimaryGeneratedColumn, Entity, Column } from "typeorm";
+import { PrimaryGeneratedColumn, Entity, Column, OneToMany } from "typeorm";
 import { ApiProperty } from "@nestjs/swagger";
+import { Device } from "../device/device.entity";
 
 @Entity()
 export class Client {
@@ -17,4 +18,15 @@ export class Client {
     @ApiProperty()
     @Column()
     phone: string;
+
+    @OneToMany(
+        () => Device, 
+        (device: Device) => device.client,
+        {
+            onUpdate: 'CASCADE',
+            onDelete: 'CASCADE'
+        }
+    )
+    devices: Device[];
+
 }
