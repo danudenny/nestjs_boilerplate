@@ -4,10 +4,11 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Device } from './device.entity';
 import { Client } from '../clients/client.entity';
+import { Panel } from '../panels/panel.entity';
 
 @Module({
     imports: [
-        TypeOrmModule.forFeature([Device, Client])
+        TypeOrmModule.forFeature([Device, Client, Panel])
     ],
     controllers: [
         DeviceController

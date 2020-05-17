@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Param, UseGuards, Delete, Put, UseInterceptors, UploadedFile, Res } from '@nestjs/common';
+import { Controller, Get, Post, Body, Param, UseGuards, Delete, Put, UseInterceptors, UploadedFile } from '@nestjs/common';
 import { UserService } from './user.service';
 import { User } from './user.entity';
 import { AuthGuard } from '@nestjs/passport';
@@ -8,7 +8,7 @@ import { extname } from  'path';
 import { FileInterceptor } from '@nestjs/platform-express';
 
 @Controller('api/user')
-@ApiTags('User')
+@ApiTags('👨 User')
 export class UserController {
     
     constructor(private userService: UserService){}
