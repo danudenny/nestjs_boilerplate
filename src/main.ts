@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
-import { ClusterService } from './modules/__utils/cluster.service';
+// import { ClusterService } from './modules/__utils/cluster.service';
 // import * as express from 'express';
 // import { join } from 'path';
 
@@ -16,7 +16,6 @@ async function bootstrap() {
     .addBearerAuth()
     .build();
   const options2 = {
-      // customCss: '.swagger-ui .topbar { display: none }'
         customCss: `
         .topbar-wrapper img {content:url('https://primasaver.com//public/assets/img/logoprimasaver.png'); width:200px; height:auto; }
         .swagger-ui .topbar { background-color: #146c6d; }

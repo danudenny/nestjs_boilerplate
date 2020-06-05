@@ -17,4 +17,4 @@ import { Panel } from '../panels/panel.entity';
         DeviceService
     ],
 })
-export class DeviceModule {};
+export class DeviceModule {}

@@ -13,6 +13,7 @@ import {
     Device
 } from "../device/device.entity";
 import { ApiProperty } from "@nestjs/swagger";
+import { ReportSavingDetail } from "src/modules/models/reportSavingDetail.entity";
 
 @Entity()
 export class Panel {
@@ -61,4 +62,13 @@ export class Panel {
         }
     )
     devices: Device[];
+
+    @OneToMany(
+        () => ReportSavingDetail,
+        (reportSavingDetail: ReportSavingDetail) => reportSavingDetail.panel, {
+            onUpdate: 'CASCADE',
+            onDelete: 'CASCADE'
+        }
+    )
+    reportSavingDetail: ReportSavingDetail[];
 }

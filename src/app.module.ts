@@ -9,18 +9,20 @@ import { DeviceModule } from './modules/components/device/device.module';
 import { PanelModule } from './modules/components/panels/panel.module';
 import { BillingModule } from './modules/components/billing/billing.module';
 import { ClusterService } from './modules/__utils/cluster.service';
+import {IoCtlModule} from "./modules/components/ioctl/ioctl.module";
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot(),
-    UserModule,
-    AuthModule,
-    ClientModule,
-    DeviceModule,
-    PanelModule,
-    MailModule,
-    BillingModule,
-    ZonaModule
+      TypeOrmModule.forRoot(),
+      UserModule,
+      AuthModule,
+      ClientModule,
+      DeviceModule,
+      PanelModule,
+      MailModule,
+      BillingModule,
+      ZonaModule,
+      IoCtlModule
   ],
   controllers: [],
   providers: [
