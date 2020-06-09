@@ -19,7 +19,7 @@ export class Billing {
     @Column()
     clientId: number
     
-    @OneToOne(() => Client, client => client.billing)
+    @OneToOne(() => Client, client => client.billing, { cascade: ['insert', 'update'] })
     @JoinColumn()
     client: Client;
 

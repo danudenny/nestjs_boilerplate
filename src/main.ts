@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
+import {hostname} from "os";
 // import { ClusterService } from './modules/__utils/cluster.service';
 // import * as express from 'express';
 // import { join } from 'path';

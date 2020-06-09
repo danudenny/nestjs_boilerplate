@@ -54,7 +54,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/modules/modules/clients/client.controller.ts</code>
+            <code>src/modules/components/clients/client.controller.ts</code>
         </p>
 
             <p class="comment">
@@ -83,7 +83,7 @@
                         <ul class="index-list">
                             <li>
                                     <span class="modifier">Async</span>
-                                <a href="#createClient">createClient</a>
+                                <a href="#create">create</a>
                             </li>
                             <li>
                                     <span class="modifier">Async</span>
@@ -122,20 +122,20 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
-                    <a name="createClient"></a>
+                    <a name="create"></a>
                     <span class="name">
                         <b>
                             <span class="modifier">Async</span>
-                            createClient
+                            create
                         </b>
-                        <a href="#createClient"><span class="icon ion-ios-link"></span></a>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
                     </span>
                 </td>
             </tr>
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>createClient(client: <a href="../classes/Client.html">Client</a>)</code>
+                    <code>create(client: <a href="../classes/Client.html">Client</a>)</code>
                 </td>
             </tr>
 
@@ -143,14 +143,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Post(&#x27;/&#x27;)<br />@ApiBody({type: Client})<br />@ApiBearerAuth()<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
+                    <code>@ApiBearerAuth()<br />@Post(&#x27;/&#x27;)<br />@ApiBody({type: Client})<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Create Client&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
                 </td>
             </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="27"
-                            class="link-to-prism">src/modules/modules/clients/client.controller.ts:27</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/modules/components/clients/client.controller.ts:40</a></div>
                 </td>
             </tr>
 
@@ -187,7 +187,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+                        <b>Returns : </b>        <code><a href="../classes/Client.html" target="_self" >Promise&lt;Client[]&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -214,7 +214,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>delete(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    <code>delete(id)</code>
                 </td>
             </tr>
 
@@ -222,14 +222,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Delete(&#x27;/:id&#x27;)<br />@ApiParam({name: &#x27;id&#x27;})<br />@ApiBearerAuth()<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
+                    <code>@ApiBearerAuth()<br />@Delete(&#x27;/:id&#x27;)<br />@ApiParam({name: &#x27;id&#x27;})<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Delete Client&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
                 </td>
             </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="57"
-                            class="link-to-prism">src/modules/modules/clients/client.controller.ts:57</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="61"
+                            class="link-to-prism">src/modules/components/clients/client.controller.ts:61</a></div>
                 </td>
             </tr>
 
@@ -243,16 +243,12 @@
                             <thead>
                                 <tr>
                                     <td>Name</td>
-                                    <td>Type</td>
                                     <td>Optional</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>id</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                    </td>
 
                                     <td>
                                         No
@@ -266,7 +262,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+                        <b>Returns : </b>        <code><a href="../classes/Client.html" target="_self" >Promise&lt;Client[]&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -301,14 +297,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;/&#x27;)<br />@ApiBearerAuth()<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
+                    <code>@ApiBearerAuth()<br />@Get(&#x27;/&#x27;)<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
                 </td>
             </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="17"
-                            class="link-to-prism">src/modules/modules/clients/client.controller.ts:17</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/modules/components/clients/client.controller.ts:20</a></div>
                 </td>
             </tr>
 
@@ -341,7 +337,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>getById(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    <code>getById(id)</code>
                 </td>
             </tr>
 
@@ -349,14 +345,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Get(&#x27;/:id&#x27;)<br />@ApiParam({name: &#x27;id&#x27;})<br />@ApiBearerAuth()<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
+                    <code>@ApiBearerAuth()<br />@Get(&#x27;/:id&#x27;)<br />@ApiParam({name: &#x27;id&#x27;})<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
                 </td>
             </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="37"
-                            class="link-to-prism">src/modules/modules/clients/client.controller.ts:37</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="30"
+                            class="link-to-prism">src/modules/components/clients/client.controller.ts:30</a></div>
                 </td>
             </tr>
 
@@ -370,16 +366,12 @@
                             <thead>
                                 <tr>
                                     <td>Name</td>
-                                    <td>Type</td>
                                     <td>Optional</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>id</td>
-                                    <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                    </td>
 
                                     <td>
                                         No
@@ -393,7 +385,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+                        <b>Returns : </b>        <code><a href="../classes/Client.html" target="_self" >Promise&lt;Client[]&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -420,7 +412,7 @@
             <tr>
                 <td class="col-md-4">
                     <span class="modifier-icon icon ion-ios-reset"></span>
-                    <code>update(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, client: <a href="../classes/Client.html">Client</a>)</code>
+                    <code>update(id, client: <a href="../classes/Client.html">Client</a>)</code>
                 </td>
             </tr>
 
@@ -428,14 +420,14 @@
                 <td class="col-md-4">
                     <b>Decorators : </b>
                     <br />
-                    <code>@Put(&#x27;/:id&#x27;)<br />@ApiParam({name: &#x27;id&#x27;})<br />@ApiBearerAuth()<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Get All&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
+                    <code>@ApiBearerAuth()<br />@Put(&#x27;/:id&#x27;)<br />@ApiParam({name: &#x27;id&#x27;})<br />@ApiBody({type: Client})<br />@UseGuards(undefined)<br />@ApiOkResponse({description: &#x27;Sucess Update Client&#x27;})<br />@ApiUnauthorizedResponse({description: &#x27;Unauthorized&#x27;})<br /></code>
                 </td>
             </tr>
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="47"
-                            class="link-to-prism">src/modules/modules/clients/client.controller.ts:47</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/modules/components/clients/client.controller.ts:51</a></div>
                 </td>
             </tr>
 
@@ -457,7 +449,6 @@
                                 <tr>
                                     <td>id</td>
                                     <td>
-                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
                                     </td>
 
                                     <td>
@@ -484,7 +475,7 @@
                     <div>
                     </div>
                     <div class="io-description">
-                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+                        <b>Returns : </b>        <code><a href="../classes/Client.html" target="_self" >Promise&lt;Client[]&gt;</a></code>
 
                     </div>
                     <div class="io-description">
@@ -498,63 +489,67 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Get, Post, Body, Param, Put, Delete, UseGuards } from &quot;@nestjs/common&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, UseGuards, Get, Param, Body, Post, Put, Delete } from &quot;@nestjs/common&quot;;
 import { ClientService } from &quot;./client.service&quot;;
 import { Client } from &quot;./client.entity&quot;;
+import { JwtAuthGuard } from &quot;src/modules/__utils/jwt-guard&quot;;
 import { ApiTags, ApiBearerAuth, ApiOkResponse, ApiUnauthorizedResponse, ApiParam, ApiBody } from &quot;@nestjs/swagger&quot;;
 import { AuthGuard } from &quot;@nestjs/passport&quot;;
 
+@ApiTags(&#x27;🙇 Client&#x27;)
 @Controller(&#x27;api/client&#x27;)
-@ApiTags(&#x27;Clients&#x27;)
+@ApiBearerAuth()
+@UseGuards(new JwtAuthGuard())
 export class ClientController {
     constructor (private clientService: ClientService) {}
 
-    @Get(&#x27;/&#x27;)
     @ApiBearerAuth()
+    @Get(&#x27;/&#x27;)
     @UseGuards(AuthGuard())
     @ApiOkResponse({description: &#x27;Sucess Get All&#x27;})
     @ApiUnauthorizedResponse({ description: &#x27;Unauthorized&#x27; })
     async getAll(): Promise&lt;Client[]&gt; {
-        return await this.clientService.getAll();
+        return await this.clientService.getDevices();
     }
 
-    @Post(&#x27;/&#x27;)
-    @ApiBody({ type: Client })
     @ApiBearerAuth()
-    @UseGuards(AuthGuard())
-    @ApiOkResponse({description: &#x27;Sucess Get All&#x27;})
-    @ApiUnauthorizedResponse({ description: &#x27;Unauthorized&#x27; })
-    async createClient(@Body() client: Client): Promise&lt;any&gt; {
-        return await this.clientService.create(client);
-    }
-
     @Get(&#x27;/:id&#x27;)
-    @ApiParam({ name: &#x27;id&#x27; })
-    @ApiBearerAuth()
+    @ApiParam({name : &#x27;id&#x27;})
     @UseGuards(AuthGuard())
     @ApiOkResponse({description: &#x27;Sucess Get All&#x27;})
     @ApiUnauthorizedResponse({ description: &#x27;Unauthorized&#x27; })
-    async getById(@Param(&#x27;id&#x27;) id: number): Promise&lt;any&gt; {
+    async getById(@Param(&#x27;id&#x27;) id): Promise&lt;Client[]&gt; {
         return await this.clientService.getById(id);
     }
 
+    @ApiBearerAuth()
+    @Post(&#x27;/&#x27;)
+    @ApiBody({ type: Client })
+    @UseGuards(AuthGuard())
+    @ApiOkResponse({description: &#x27;Sucess Create Client&#x27;})
+    @ApiUnauthorizedResponse({ description: &#x27;Unauthorized&#x27; })
+    async create(@Body() client: Client): Promise&lt;Client[]&gt; {
+        return await this.clientService.create(client);
+    }
+
+    @ApiBearerAuth()
     @Put(&#x27;/:id&#x27;)
     @ApiParam({ name: &#x27;id&#x27; })
-    @ApiBearerAuth()
+    @ApiBody({ type: Client })
     @UseGuards(AuthGuard())
-    @ApiOkResponse({description: &#x27;Sucess Get All&#x27;})
+    @ApiOkResponse({description: &#x27;Sucess Update Client&#x27;})
     @ApiUnauthorizedResponse({ description: &#x27;Unauthorized&#x27; })
-    async update(@Param(&#x27;id&#x27;) id: number, @Body() client: Client): Promise&lt;any&gt; {
+    async update(@Param(&#x27;id&#x27;) id,@Body() client: Client): Promise&lt;Client[]&gt; {
         return await this.clientService.update(id, client);
     }
 
+    @ApiBearerAuth()
     @Delete(&#x27;/:id&#x27;)
     @ApiParam({ name: &#x27;id&#x27; })
-    @ApiBearerAuth()
     @UseGuards(AuthGuard())
-    @ApiOkResponse({description: &#x27;Sucess Get All&#x27;})
+    @ApiOkResponse({description: &#x27;Sucess Delete Client&#x27;})
     @ApiUnauthorizedResponse({ description: &#x27;Unauthorized&#x27; })
-    async delete(@Param(&#x27;id&#x27;) id: number): Promise&lt;any&gt; {
+    async delete(@Param(&#x27;id&#x27;) id): Promise&lt;Client[]&gt; {
         return await this.clientService.delete(id);
     }
 }</code></pre>

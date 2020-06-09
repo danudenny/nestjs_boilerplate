@@ -54,7 +54,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/modules/modules/auth/auth.controller.ts</code>
+            <code>src/modules/components/auth/auth.controller.ts</code>
         </p>
 
             <p class="comment">
@@ -133,8 +133,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="13"
-                            class="link-to-prism">src/modules/modules/auth/auth.controller.ts:13</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="14"
+                            class="link-to-prism">src/modules/components/auth/auth.controller.ts:14</a></div>
                 </td>
             </tr>
 
@@ -188,9 +188,10 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Controller, Post, Body } from &#x27;@nestjs/common&#x27;;
 import { AuthService } from &#x27;./auth.service&#x27;;
 import { UserLogin } from &#x27;../users/user.entity&#x27;;
-import { ApiOkResponse, ApiBadRequestResponse } from &#x27;@nestjs/swagger&#x27;;
+import { ApiOkResponse, ApiBadRequestResponse, ApiTags } from &#x27;@nestjs/swagger&#x27;;
 
 @Controller(&#x27;api/auth&#x27;)
+@ApiTags(&#x27;🔒 Auth&#x27;)
 export class AuthController {
     constructor(private authService: AuthService) {}
 

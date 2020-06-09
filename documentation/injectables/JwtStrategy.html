@@ -236,7 +236,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ExtractJwt, Strategy, JwtPayload } from &#x27;passport-jwt&#x27;;
 import { PassportStrategy } from &#x27;@nestjs/passport&#x27;;
 import { Injectable, UnauthorizedException } from &#x27;@nestjs/common&#x27;;
-import { UserService } from &#x27;../modules/users/user.service&#x27;;
+import { UserService } from &#x27;../components/users/user.service&#x27;;
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {

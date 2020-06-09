@@ -15,8 +15,8 @@ export class BillingService {
         return await this.billingRepo.findOne(id)
     }
 
-    async create(billing: Billing): Promise<any> {
-        return await this.billingRepo.save(billing)
+    async create(billings: Billing): Promise<any> {
+        return await this.billingRepo.save(billings)
     }
 
     async update(id: number, billing: Billing): Promise<UpdateResult> {

@@ -117,7 +117,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/modules/modules/clients/client.module.ts</code>
+            <code>src/modules/components/clients/client.module.ts</code>
         </p>
 
 
@@ -157,11 +157,12 @@ import { ClientService } from &#x27;./client.service&#x27;;
 import { TypeOrmModule } from &#x27;@nestjs/typeorm&#x27;;
 import { Client } from &#x27;./client.entity&#x27;;
 import { PassportModule } from &#x27;@nestjs/passport&#x27;;
+import { Device } from &#x27;../device/device.entity&#x27;;
 
 @Module({
     imports: [
         PassportModule.register({ defaultStrategy: &#x27;jwt&#x27; }),
-        TypeOrmModule.forFeature([Client])
+        TypeOrmModule.forFeature([Client, Device])
     ],
     controllers: [ClientController],
     providers: [ClientService],

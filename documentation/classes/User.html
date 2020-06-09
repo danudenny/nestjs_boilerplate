@@ -60,7 +60,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/modules/modules/users/user.entity.ts</code>
+            <code>src/modules/components/users/user.entity.ts</code>
         </p>
 
 
@@ -90,6 +90,9 @@
                             </li>
                             <li>
                                 <a href="#password">password</a>
+                            </li>
+                            <li>
+                                <a href="#photo">photo</a>
                             </li>
                             <li>
                                 <a href="#username">username</a>
@@ -156,7 +159,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/modules/modules/users/user.entity.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/modules/components/users/user.entity.ts:28</a></div>
                             </td>
                         </tr>
 
@@ -192,7 +195,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/modules/modules/users/user.entity.ts:8</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/modules/components/users/user.entity.ts:8</a></div>
                             </td>
                         </tr>
 
@@ -228,7 +231,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/modules/modules/users/user.entity.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/modules/components/users/user.entity.ts:12</a></div>
                             </td>
                         </tr>
 
@@ -264,7 +267,43 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/modules/modules/users/user.entity.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/modules/components/users/user.entity.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="photo"></a>
+                        <span class="name">
+                            <b>
+                            photo</b>
+                            <a href="#photo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ApiProperty()<br />@Column()<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/modules/components/users/user.entity.ts:32</a></div>
                             </td>
                         </tr>
 
@@ -300,7 +339,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/modules/modules/users/user.entity.ts:16</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/modules/components/users/user.entity.ts:16</a></div>
                             </td>
                         </tr>
 
@@ -344,7 +383,7 @@
             <tr>
                 <td class="col-md-4">
                     <div class="io-line">Defined in <a href="" data-line="19"
-                            class="link-to-prism">src/modules/modules/users/user.entity.ts:19</a></div>
+                            class="link-to-prism">src/modules/components/users/user.entity.ts:19</a></div>
                 </td>
             </tr>
 
@@ -398,6 +437,10 @@ export class User {
     @ApiProperty()
     @Column()
     email: string;
+
+    @ApiProperty()
+    @Column()
+    photo: string;
 }
 
 export class UserLogin {

@@ -60,7 +60,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/modules/modules/users/user.entity.ts</code>
+            <code>src/modules/components/users/user.entity.ts</code>
         </p>
 
 
@@ -133,7 +133,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/modules/modules/users/user.entity.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/modules/components/users/user.entity.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -169,7 +169,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/modules/modules/users/user.entity.ts:36</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/modules/components/users/user.entity.ts:40</a></div>
                             </td>
                         </tr>
 
@@ -216,6 +216,10 @@ export class User {
     @ApiProperty()
     @Column()
     email: string;
+
+    @ApiProperty()
+    @Column()
+    photo: string;
 }
 
 export class UserLogin {
